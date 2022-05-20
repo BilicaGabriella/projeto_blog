@@ -73,6 +73,11 @@ header .container {
     padding: 0 100px;
 } 
 
+/*Para a imagem não aparecer no desktop*/
+header .container img {
+    display: none;
+}
+
 header .container h1{
     color: var(--cor_clara2);
 }
@@ -97,5 +102,30 @@ nav ul a {
 }
 
 nav img {
+
     height: 51px;
+}
+
+section {
+    background-color: red;
+    height: 100px;
+}
+
+/*Configurar o site para outras dimensões (smartphone)*/
+@media (max-width:767px) {
+
+    header .container {
+        width: 100% ;
+    }
+
+    header .container img {
+        display: inline;
+        height: 51px;
+        margin-bottom: 20px;
+    }
+    nav img {
+        display: none;
+        height: 51px;
+    }
+
 }

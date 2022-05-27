@@ -105,9 +105,23 @@ nav img {
     height: 51px;
 }
 
-section {
-    background-color: red;
-    height: 100px;
+nav ul a svg {
+    display: none;
+}
+
+.about-me {
+    display: flex;
+    padding: 100px;
+}
+
+.about-me .container {
+    width: 50%;
+    padding-right: 50px;
+}
+
+.about-me .img-container img {
+    width: 50%;
+    height: 100%;
 }
 
 /*Configurar o site para outras dimensões (smartphone)*/

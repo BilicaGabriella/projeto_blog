@@ -1,6 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+:root{
+    --black: #212121;
+    --charcoal: #323232;
+    --prismarine: #0D7377;
+    --teal: #14FFEC;
+    --purple: #5280e2;
+    --green: #15cdcb;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    background: var(--black);
+}
+
+body, button, input, select, textarea {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    color: white;
+}
+
+h1, h2 {
+    margin: 0;
+    font-weight: 400;
+}
+
+p {
+    /* Sou um desenvolvedor amador de aplicações que às vezes funcionam. */
+    font-size: 20px;
+    line-height: 23px;
+    text-align: justify;
+}
+
+button {
+    /* Entre em contato */
+    background: var(--purple);
+    border: 0;
+    border-radius: 15px;
+}
 
 :root {
     --cor_escura: #276678;
@@ -153,7 +198,7 @@ nav ul a svg {
     font-family: 'Merriweather';
     font-style: normal;
     font-weight: 400;
-    font-size: 45px;
+    font-size: 40px;
     line-height: 30px;
     
     /* degrade */
@@ -251,4 +296,245 @@ nav ul a svg {
         font-size: 12px;
     }
 
+}
+
+
+
+.Cabecalho-servico h1 {
+        /* Serviços */
+        font-family: 'Merriweather';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 30px;
+        
+        /* degrade */
+        
+        background: linear-gradient(180deg, rgba(29, 139, 170, 0.99414) 3.12%, #6DB5CA 45.31%, rgba(235, 251, 255, 0.8125) 99.99%, rgba(22, 135, 167, 0) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        background-blend-mode: hard-light;
+
+        text-align: center;
+
+    /* cor escura 2 */
+
+    border: 1px solid #205261;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.servico h1 {
+    display: -webkit-flex; /* Safari */
+    -webkit-align-items: center; /* Safari 7.0+ */
+    align-items: center;
+    display: flex;
+    padding: 100px;
+}
+
+.servico {
+    padding: 100px;
+    width: 50%;
+    padding-right: 50px;
+    display: flex;
+}
+
+.servico .blocos {
+    display: -webkit-flex; /* Safari */
+    -webkit-align-items: center; /* Safari 7.0+ */
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.servico .blocos .bloco1 {
+    box-sizing: border-box;
+    width: 146px;
+    height: 146px;
+    left: 56px;
+    top: 807px;
+
+    /* Cor escura */
+
+    background: #276678;
+    /* cor média */
+
+    border: 1px solid #1687A7;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.servico .blocos .bloco1 h2 {
+    
+
+    width: 114px;
+    height: 20px;
+    left: 72px;
+    top: 873px;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    /* identical to box height */
+
+    /* Cor clara */
+    
+    color: #F6F5F5;
+}
+
+.servico .blocos .bloco1 h3 {
+    width: 109px;
+    height: 46px;
+    left: 74px;
+    top: 893px;
+
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8.5px;
+    line-height: 11px;
+
+    /* cor clara 2 */
+
+    color: #D3E0EA;
+}
+
+.servico .blocos .bloco1 img {
+
+    width: 46px;
+    height: 46px;
+    left: 106px;
+    top: 823px;  
+
+}
+
+.servico .blocos .bloco2 {
+    box-sizing: border-box;
+
+    width: 146px;
+    height: 146px;
+    left: 246px;
+    top: 807px;
+    
+    /* Cor escura */
+    
+    background: #276678;
+    /* cor média */
+    
+    border: 1px solid #1687A7;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.servico .blocos .bloco2 h2 {
+    
+    width: 114px;
+    height: 20px;
+    left: 262px;
+    top: 873px;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    /* identical to box height */
+    
+    
+    /* Cor clara */
+    
+    color: #F6F5F5;
+    
+}
+
+.servico .blocos .bloco2 h3 {
+  
+    width: 109px;
+    height: 46px;
+    left: 264px;
+    top: 893px;
+    
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8.5px;
+    line-height: 11px;
+    
+    /* cor clara 2 */
+    color: #D3E0EA;
+}
+
+.servico .blocos .bloco2 img {
+    width: 46px;
+    height: 46px;
+    left: 296px;
+    top: 820px;
+}
+
+.servico .blocos .bloco3 {
+    box-sizing: border-box;
+
+    width: 146px;
+    height: 146px;
+    left: 436px;
+    top: 807px;
+    
+    /* Cor escura */
+    
+    background: #276678;
+    /* cor média */
+    
+    border: 1px solid #1687A7;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.servico .blocos .bloco3 h2 {
+    
+    width: 130px;
+    height: 20px;
+    left: 444px;
+    top: 873px;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    /* identical to box height */
+    
+    
+    /* Cor clara */
+    
+    color: #F6F5F5;
+    
+}
+
+.servico .blocos .bloco3 h3 {
+  
+    width: 123px;
+    height: 46px;
+    left: 447px;
+    top: 893px;
+    
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8.5px;
+    line-height: 11px;
+    
+    /* cor clara 2 */
+    
+    color: #D3E0EA;
+}
+
+.servico .blocos .bloco3 img {
+    width: 46px;
+    height: 46px;
+    left: 486px;
+    text-align: center;
 }

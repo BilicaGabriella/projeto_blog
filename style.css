@@ -3,15 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
-:root{
-    --black: #212121;
-    --charcoal: #323232;
-    --prismarine: #0D7377;
-    --teal: #14FFEC;
-    --purple: #5280e2;
-    --green: #15cdcb;
-}
-
 * {
     box-sizing: border-box;
 }
@@ -31,20 +22,6 @@ body, button, input, select, textarea {
 h1, h2 {
     margin: 0;
     font-weight: 400;
-}
-
-p {
-    /* Sou um desenvolvedor amador de aplicações que às vezes funcionam. */
-    font-size: 20px;
-    line-height: 23px;
-    text-align: justify;
-}
-
-button {
-    /* Entre em contato */
-    background: var(--purple);
-    border: 0;
-    border-radius: 15px;
 }
 
 :root {

@@ -3,27 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
-* {
-    box-sizing: border-box;
-}
-
-html, body {
-    margin: 0;
-    background: var(--black);
-}
-
-body, button, input, select, textarea {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    color: white;
-}
-
-h1, h2 {
-    margin: 0;
-    font-weight: 400;
-}
-
 :root {
     --cor_escura: #276678;
     --cor_média: #1687A7;
@@ -128,6 +107,58 @@ header .container img {
     display: none;
 }
 
+
+.about-me .img-container .line.green{
+    
+    transform: matrix(0.39, -0.91, 0.95, 0.36, 0, 0);
+    color: linear-gradient(180deg, rgba(29, 139, 170, 0.99414) 3.12%, #6DB5CA 45.31%, rgba(235, 251, 255, 0.8125) 99.99%, rgba(22, 135, 167, 0) 100%);
+}
+
+.about-me .img-container .line.purple{
+    transform: matrix(0.93, -0.35, 0.39, 0.93, 0, 0);
+    color: var(--cor_média);
+}
+
+/*Configurar o site para outras dimensões (Responsividade para tablet)*/
+@media (max-width: 767px) {
+
+    header .container {
+        width: 100% ;
+    }
+
+    header .container img {
+        display: inline;
+        height: 51px;
+        margin-bottom: 45px;
+    }
+    nav img {
+        display: none;
+        height: 51px;
+    }
+}
+
+/*Configurar o site para outras dimensões (smartphone)*/
+
+@media (max-width: 480px) {
+
+    header .container {
+        padding: 0 40px ;
+    }
+
+    nav {
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        top: unset;
+        padding: 0 15px;
+    }
+
+    nav ul a {
+        font-size: 12px;
+    }
+
+}
+
 header .container h1{
     color: var(--cor_clara2);
 }
@@ -224,57 +255,6 @@ nav ul a svg {
     left: calc(50% - 30%/2 - 25px);
 }
 
-.about-me .img-container .line.green{
-    
-    transform: matrix(0.39, -0.91, 0.95, 0.36, 0, 0);
-    color: linear-gradient(180deg, rgba(29, 139, 170, 0.99414) 3.12%, #6DB5CA 45.31%, rgba(235, 251, 255, 0.8125) 99.99%, rgba(22, 135, 167, 0) 100%);
-}
-
-.about-me .img-container .line.purple{
-    transform: matrix(0.93, -0.35, 0.39, 0.93, 0, 0);
-    color: var(--cor_média);
-}
-
-/*Configurar o site para outras dimensões (Responsividade para tablet)*/
-@media (max-width: 767px) {
-
-    header .container {
-        width: 100% ;
-    }
-
-    header .container img {
-        display: inline;
-        height: 51px;
-        margin-bottom: 45px;
-    }
-    nav img {
-        display: none;
-        height: 51px;
-    }
-}
-
-/*Configurar o site para outras dimensões (smartphone)*/
-
-@media (max-width: 480px) {
-
-    header .container {
-        padding: 0 40px ;
-    }
-
-    nav {
-        position: fixed;
-        width: 100%;
-        bottom: 0;
-        top: unset;
-        padding: 0 15px;
-    }
-
-    nav ul a {
-        font-size: 12px;
-    }
-
-}
-
 
 
 .Cabecalho-servico h1 {
@@ -301,7 +281,31 @@ nav ul a svg {
     border: 1px solid #205261;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
+    
 }
+
+
+.curriculo .container {
+    max-width: 1200px;
+    display: flex;
+    margin: 50px auto;
+}
+
+.curriculo .container .conteudo {
+    width: 100%;
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.curriculo .container img {
+    width: 50%;
+    text-align: center;
+    position: relative;
+}
+
 
 .servico h1 {
     display: -webkit-flex; /* Safari */
@@ -400,27 +404,6 @@ nav ul a svg {
     border: 1px solid #205261;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.curriculo .container {
-    max-width: 1200px;
-    display: flex;
-    margin: 50px auto;
-}
-
-.curriculo .container .conteudo {
-    width: 100%;
-    display: flex;
-    text-align: left;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.curriculo .container img {
-    width: 50%;
-    text-align: center;
-    position: relative;
-}
-
 .curriculo .container .conteudo .curriculo-text {
     display: grid;
     grid-gap: 1rem;
